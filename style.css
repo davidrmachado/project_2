@@ -3,3 +3,12 @@
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
 }
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+main {
+  display: flex;
+}
