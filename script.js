@@ -1,12 +1,10 @@
-const buttonEntrar = document.getElementById("btn-entrar");
+const btnEntrar = document.getElementById("btn-entrar");
 
-buttonEntrar.addEventListener("click", function (e) {
-  const email = document.getElementById("inputEmail");
-  const senha = document.getElementById("inputSenha");
+btnEntrar.addEventListener("click", () => {
+  const email = document.getElementById("inputEmail").value;
+  const senha = document.getElementById("inputPassword").value;
 
-  if (email.value === "tryber@teste.com" && senha.value === "123456") {
-    alert("Olá, Tryber!");
-  } else {
-    alert("Email ou senha inválidos.");
-  }
+  email === "tryber@teste.com" && senha === "123456"
+    ? alert("Olá, Tryber!")
+    : alert("Email ou senha inválidos.");
 });
