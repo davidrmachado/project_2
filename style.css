@@ -23,3 +23,6 @@ main {
     display: flex;
     flex-direction: column;
 }
+#coments {
+    display: flex;
+}
