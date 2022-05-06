@@ -11,3 +11,16 @@ btnEntrar.addEventListener('click', () => {
 agreementCheck.addEventListener('click', () => {
   document.getElementById('submit-btn').toggleAttribute('disabled');
 });
+
+// Função para exibir caracteres restantes da área de texto:
+
+const textarea = document.getElementById('textarea');
+const count = document.getElementById('counter');
+
+function contador() {
+  const caracteresTotais = textarea.value.length;
+  const restantes = 500 - caracteresTotais;
+  count.innerHTML = restantes;
+}
+
+textarea.addEventListener('keyup', contador);
